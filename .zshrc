@@ -6,7 +6,7 @@ plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.local/bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/grathium/.local/bin
+source ~/.local/bin
 
 alias ll="ls -al"
 
