@@ -12,6 +12,7 @@ alias l="ls -a"
 alias ll="ls -al"
 
 alias q="exit"
+alias qq="exit"
 alias :q="exit"
 alias qa="exit"
 
