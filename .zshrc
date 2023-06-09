@@ -30,3 +30,8 @@ alias uu="cd ../"
 alias uuu="cd ../.."
 alias uuuu="cd ../../.."
 alias uuuuu="cd ../../../.."
+
+# copy and paste commands that can be used in pipes
+# e.g. "$ cat ./file.txt | c" will copy the contents of the file to your clipboard
+alias c="xclip -selection clipboard"
+alias p="xclip -selection clipboard -o"
