@@ -19,6 +19,9 @@ alias qa="exit"
 # needs asciinema
 alias record="asciinema rec"
 
+# emacs
+alias em="emacs"
+
 # angular auto complete
 source <(ng completion script)
 
