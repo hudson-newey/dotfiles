@@ -20,7 +20,7 @@ alias qa="exit"
 alias record="asciinema rec"
 
 # emacs
-alias em="emacs"
+alias em="emacs -Q -nw"
 
 # angular auto complete
 source <(ng completion script)
