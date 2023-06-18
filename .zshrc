@@ -22,6 +22,9 @@ alias record="asciinema rec"
 # emacs
 alias em="emacs -Q -nw"
 
+# git shorthand
+alias g="git"
+
 # angular auto complete
 source <(ng completion script)
 
