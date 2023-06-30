@@ -24,6 +24,10 @@ alias em="emacs -Q -nw"
 
 # git shorthand
 alias g="git"
+alias ga="git add -A"
+alias gc="git commit"
+alias gp="git push"
+alias gs="ga;gc;gp"
 
 # angular auto complete
 source <(ng completion script)
