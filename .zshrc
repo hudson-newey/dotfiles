@@ -22,6 +22,9 @@ alias record="asciinema rec"
 # emacs
 alias em="emacs -Q -nw"
 
+# installed with most latex compilers, but not added to PATH
+alias pandoc="/usr/bin/pandoc"
+
 # git shorthand
 alias g="git"
 alias ga="git add -A"
