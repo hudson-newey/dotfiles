@@ -25,6 +25,10 @@ alias em="emacs -Q -nw"
 # installed with most latex compilers, but not added to PATH
 alias pandoc="/usr/bin/pandoc"
 
+# i'm aliasing the gnatmake ada compiler because I think the "ada" alias is more descriptive of its purpose
+# this alias is for the ada programming language (https://www.adacore.com/)
+alias ada="gnatmake"
+
 # git shorthand
 alias g="git"
 alias ga="git add -A"
