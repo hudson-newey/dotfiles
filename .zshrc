@@ -7,6 +7,7 @@ plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 source ~/.local/bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.local/bin
+source /usr/sbin/
 
 alias l="ls -a"
 alias ll="ls -al"
