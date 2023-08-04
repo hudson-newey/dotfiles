@@ -37,6 +37,10 @@ alias gc="git commit"
 alias gp="git push"
 alias gs="ga;gc;gp"
 
+# npm an pnpm shorthand
+alias n="npm"
+alias pn="pnpm"
+
 # angular auto complete
 source <(ng completion script)
 
