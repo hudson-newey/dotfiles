@@ -41,6 +41,9 @@ alias gs="ga;gc;gp"
 alias n="npm"
 alias pn="pnpm"
 
+# chatgpt alias
+alias gpt="npx chatgpt@latest --model gpt-4 --apiKey '<YOUR API KEY HERE>'"
+
 # angular auto complete
 source <(ng completion script)
 
