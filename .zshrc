@@ -30,6 +30,9 @@ alias pandoc="/usr/bin/pandoc"
 # this alias is for the ada programming language (https://www.adacore.com/)
 alias ada="gnatmake"
 
+# since the code command is broken when using flatpak, we have to rebind it
+alias code="flatpak run com.visualstudio.code"
+
 # git shorthand
 alias g="git"
 alias ga="git add -A"
