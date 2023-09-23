@@ -20,6 +20,9 @@ alias qa="exit"
 # needs asciinema
 alias record="asciinema rec"
 
+# vscode
+alias vsc="code ."
+
 # emacs
 alias em="emacs -Q -nw"
 
