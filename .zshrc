@@ -42,6 +42,7 @@ alias ga="git add -A"
 alias gc="git commit"
 alias gp="git push"
 alias gs="ga;gc;gp"
+alias gm="git pull"
 
 # npm an pnpm shorthand
 alias n="npm"
