@@ -67,3 +67,8 @@ alias uuuuu="cd ../../../.."
 # e.g. "$ cat ./file.txt | c" will copy the contents of the file to your clipboard
 alias c="xclip -selection clipboard"
 alias p="xclip -selection clipboard -o"
+
+# begin pre-interacitity commands
+
+# initilise git lfs hooks
+git lfs install
