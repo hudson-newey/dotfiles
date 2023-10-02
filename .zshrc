@@ -44,6 +44,9 @@ alias gp="git push"
 alias gs="ga;gc;gp"
 alias gm="git pull"
 
+# lazy git
+alias lg="lazygit"
+
 # npm an pnpm shorthand
 alias n="npm"
 alias pn="pnpm"
