@@ -44,6 +44,7 @@ alias gc="git commit"
 alias gp="git push"
 alias gs="ga;gc;gp"
 alias gm="git pull"
+alias gcl="git clone"
 
 # lazy git
 alias lg="lazygit"
