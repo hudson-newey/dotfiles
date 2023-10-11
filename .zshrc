@@ -9,6 +9,7 @@ source ~/.local/bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.local/bin/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.local/bin
 source /usr/sbin/
+source ~/.dotnet/tools
 
 alias l="ls -a"
 alias ll="ls -al"
