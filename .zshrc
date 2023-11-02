@@ -10,8 +10,7 @@ source ~/.local/bin/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.local/bin
 source /usr/sbin/
 
-export PATH=$PATH:$GOPATH/bin
-
+PATH=$PATH:~/go/bin
 PATH=$PATH:~/.dotnet/tools
 
 alias l="ls -a"
