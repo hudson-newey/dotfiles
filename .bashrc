@@ -1,6 +1,7 @@
 source ~/.local/bin
 source /usr/sbin/
 
+PATH=$PATH:~/go/bin
 PATH=$PATH:~/.dotnet/tools
 
 alias l="ls -a"
