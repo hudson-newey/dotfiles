@@ -60,7 +60,11 @@ alias pn="pnpm"
 alias gpt="npx chatgpt@latest --model gpt-4 --apiKey '<YOUR API KEY HERE>'"
 
 # angular auto complete
-source <(ng completion script)
+# test if angular exists in PATH
+if ng &> /dev/null
+then
+    source <(ng completion script)
+fi
 
 # from https://github.com/verhovsky/dotfiles (very cool dotfiles go check it out)
 alias e="ls -t --color=auto --group-directories-first"
