@@ -30,6 +30,9 @@ alias vsc="code ."
 # emacs
 alias em="emacs -Q -nw"
 
+# lunar nvim
+alias lvim="/home/grathium/.local/bin/lvim"
+
 # installed with most latex compilers, but not added to PATH
 alias pandoc="/usr/bin/pandoc"
 
