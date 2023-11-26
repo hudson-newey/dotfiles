@@ -8,6 +8,9 @@ function upFour { cd ..\..\..\... }
 function lsShort { ls }
 function lsLong { ls }
 
+$env:PATH += ";C:\go\bin\"
+$env:PATH += ";C:\.dotnet\tools\"
+
 Set-Alias q runExit
 Set-Alias g git
 Set-Alias vsc code
