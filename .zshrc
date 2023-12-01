@@ -87,3 +87,5 @@ alias p="xclip -selection clipboard -o"
 
 # initilise git lfs hooks
 git lfs install
+
+clear
