@@ -33,3 +33,9 @@ $ p | xargs grep "Error"
 ```
 
 Automatic git-lfs config on terminal startup
+
+Supports:
+
+.NET global installs
+GoLang global installs
+.local/bin installs
