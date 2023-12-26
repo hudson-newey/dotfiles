@@ -3,6 +3,7 @@ source /usr/sbin/
 
 PATH=$PATH:~/go/bin
 PATH=$PATH:~/.dotnet/tools
+PATH=$PATH:~/.cargo/bin
 
 alias l="ls -a"
 alias ll="ls -al"
