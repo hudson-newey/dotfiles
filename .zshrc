@@ -13,6 +13,7 @@ source /usr/sbin/
 PATH=$PATH:~/go/bin
 PATH=$PATH:~/.dotnet/tools
 PATH=$PATH:~/.cargo/bin
+PATH=$PATH:~/.config/emacs/bin
 
 alias l="ls -a"
 alias ll="ls -al"
