@@ -85,13 +85,11 @@ alias uuuuu="cd ../../../.."
 alias c="xclip -selection clipboard"
 alias p="xclip -selection clipboard -o"
 
+alias t=tmux
+
 # begin pre-interacitity commands
 
 # initilise git lfs hooks
 git lfs install
 
 clear
-
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
