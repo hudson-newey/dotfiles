@@ -1,4 +1,4 @@
-~# My ~/.zshrc
+# My ~/.zshrc
 
 ## To install
 
