@@ -10,6 +10,8 @@ source ~/.local/bin/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.local/bin
 source /usr/sbin/
 
+eval "$(zoxide init zsh)"
+
 PATH=$PATH:~/go/bin
 PATH=$PATH:~/.dotnet/tools
 PATH=$PATH:~/.cargo/bin
@@ -74,11 +76,12 @@ fi
 # from https://github.com/verhovsky/dotfiles (very cool dotfiles go check it out)
 alias e="ls -t --color=auto --group-directories-first"
 alias ee="ls -talhv --group-directories-first"
-alias u="cd"
-alias uu="cd ../"
-alias uuu="cd ../.."
-alias uuuu="cd ../../.."
-alias uuuuu="cd ../../../.."
+
+alias u="z"
+alias uu="z .."
+alias uuu="z ../.."
+alias uuuu="z ../../.."
+alias uuuuu="z ../../../.."
 
 # copy and paste commands that can be used in pipes
 # e.g. "$ cat ./file.txt | c" will copy the contents of the file to your clipboard
