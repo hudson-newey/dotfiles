@@ -38,6 +38,8 @@ require("lazy").setup({
 	"nvim-tree/nvim-tree.lua",
 	"nvim-tree/nvim-web-devicons",
 	"wfxr/minimap.vim",
+	"sbdchd/neoformat",
+	"github/copilot.vim",
 	{'romgrk/barbar.nvim', opts = {}, init = function() vim.g.barbar_auto_setup = false end }
 })
 
@@ -66,7 +68,7 @@ require("ibl").setup()
 local terminal = require("nvterm.terminal")
 
 vim.api.nvim_set_keymap("n", "<C-P>", ":Telescope find_files<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-O>", ":Telescope<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-O>", ":Telescope commands<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-S>", ":w<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-B>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-]>", ":BufferNext<CR>", { noremap = true, silent = true })
@@ -86,16 +88,18 @@ vim.cmd "set nu"
 -- enable minimap
 vim.cmd "let g:minimap_width = 15"
 
+--[=====[
 vim.cmd[[
   augroup CustomCommands
     autocmd!
     autocmd BufReadPost * lua vim.cmd "Minimap"
   augroup END
-]]
+  ]]
+--]=====]
 
 require"nvim-treesitter.configs".setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "bash", "cpp", "c_sharp", "dockerfile", "gitignore", "go", "html", "json", "latex", "nix", "python", "r", "scss", "ruby", "rust", "vue", "zig", "typescript", "javascript" },
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "bash", "cpp", "c_sharp", "dockerfile", "gitignore", "go", "html", "json", "latex", "nix", "python", "r", "scss", "ruby", "rust", "vue", "zig", "typescript", "javascript", "astro" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -188,7 +192,7 @@ local lspconfig = require('lspconfig')
 lspconfig.tsserver.setup { capabilities = capabilities }
 lspconfig.astro.setup{ capabilities = capabilities }
 lspconfig.angularls.setup{ capabilities = capabilities }
-lspconfig.lua_ls.setup { capabilities = capabilities }
+-- lspconfig.lua_ls.setup { capabilities = capabilities }
 lspconfig.bashls.setup{ capabilities = capabilities }
 lspconfig.golangci_lint_ls.setup{ capabilities = capabilities }
 lspconfig.html.setup{ capabilities = capabilities }
@@ -199,3 +203,28 @@ lspconfig.tailwindcss.setup{ capabilities = capabilities }
 lspconfig.yamlls.setup{ capabilities = capabilities }
 lspconfig.csharp_ls.setup{ capabilities = capabilities }
 lspconfig.dockerls.setup{ capabilities = capabilities }
+lspconfig.eslint.setup{}
+
+vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
+
+-- Use LspAttach autocommand to only map the following keys
+-- after the language server attaches to the current buffer
+vim.api.nvim_create_autocmd('LspAttach', {
+  group = vim.api.nvim_create_augroup('UserLspConfig', {}),
+  callback = function(ev)
+    -- Enable completion triggered by <c-x><c-o>
+    vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
+
+    -- Buffer local mappings.
+    -- See `:help vim.lsp.*` for documentation on any of the below functions
+    local opts = { buffer = ev.buf }
+    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+    vim.keymap.set('n', '<F12>', vim.lsp.buf.definition, opts)
+    vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, opts)
+    vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+    vim.keymap.set('n', '<C-.>', vim.lsp.buf.code_action, opts)
+  end,
+})
