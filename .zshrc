@@ -90,9 +90,4 @@ alias p="xclip -selection clipboard -o"
 
 alias t=tmux
 
-# begin pre-interacitity commands
-
-# initilise git lfs hooks
-git lfs install
-
 clear
