@@ -1,6 +1,6 @@
 # using ohmy-zsh
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="aussiegeek"
 
 plugins=(git)
 
@@ -89,5 +89,3 @@ alias c="xclip -selection clipboard"
 alias p="xclip -selection clipboard -o"
 
 alias t=tmux
-
-clear
