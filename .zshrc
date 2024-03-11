@@ -77,6 +77,8 @@ fi
 alias e="ls -t --color=auto --group-directories-first"
 alias ee="ls -talhv --group-directories-first"
 
+alias fman="compgen -c | fzf | xargs man"
+
 alias u="z"
 alias uu="z .."
 alias uuu="z ../.."
