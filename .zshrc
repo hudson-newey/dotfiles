@@ -2,7 +2,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="aussiegeek"
 
-plugins=(git)
+plugins=(git vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.local/bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
