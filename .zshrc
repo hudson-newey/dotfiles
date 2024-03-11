@@ -18,7 +18,7 @@ PATH=$PATH:~/.cargo/bin
 PATH=$PATH:~/.config/emacs/bin
 
 alias l="ls -a"
-alias ll="ls -al"
+alias ll="ls -latrh"
 
 alias q="exit"
 alias qq="exit"
