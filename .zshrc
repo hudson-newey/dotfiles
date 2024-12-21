@@ -37,4 +37,5 @@ export PATH=$PATH:~/.dotnet/tools
 export PATH=$PATH:~/.cargo/bin
 export PATH=$PATH:~/.config/emacs/bin
 export PATH=$PATH:/usr/sbin/
+export PATH=$PATH:~/.local/bin/
 eval "$(zoxide init zsh)"
