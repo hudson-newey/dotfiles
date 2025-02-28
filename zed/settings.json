@@ -11,8 +11,11 @@
   "ui_font_size": 14,
   "buffer_font_size": 12,
   "buffer_font_family": "JetBrains Mono",
+  "font_family": "JetBrains Mono",
+  "ui_font_family": "JetBrains Mono",
   "toolbar": {
-    "quick_actions": false
+    "quick_actions": false,
+    "breadcrumbs": false
   },
   "buffer_font_features": {
     "calt": false
