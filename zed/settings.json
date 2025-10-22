@@ -7,24 +7,43 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "ensure_final_newline_on_save": true,
+  "format_on_save": "off",
+  "icon_theme": "Material Icon Theme",
   "vim_mode": true,
   "ui_font_size": 14,
   "buffer_font_size": 12,
   "buffer_font_family": "JetBrains Mono",
-  "font_family": "JetBrains Mono",
   "ui_font_family": "JetBrains Mono",
   "toolbar": {
     "quick_actions": false,
     "breadcrumbs": false
   },
+  "file_finder": {
+    "modal_max_width": "medium"
+  },
   "buffer_font_features": {
     "calt": false
   },
   "gutter": {
-    "buttons": false,
-    "code_actions": false,
     "folds": false
   },
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["angular", "..."]
+    },
+    "HTML": {
+      "language_servers": ["angular", "..."]
+    }
+  },
+  "lsp": {
+		"angular": {
+			"initialization_options": {
+				"angular_language_service_version": "latest",
+				"typescript_version": "latest"
+			}
+		}
+	},
   "terminal": {
     "shell": {
       "program": "zsh"
@@ -36,7 +55,22 @@
   "wrap_guides": [80, 120],
   "theme": {
     "mode": "system",
-    "light": "Atelier Dune Light",
-    "dark": "Summercamp"
+    "light": "Quiet Light",
+    "dark": "VSCode Dark Modern"
+  },
+  "project_panel": {
+    "sticky_scroll": false,
+    "indent_size": 10,
+    "entry_spacing": "standard"
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
+    },
+    "model_parameters": []
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
   }
 }
