@@ -16,7 +16,57 @@
     "context": "Editor",
     "bindings": {
       "ctrl-tab": "pane::ActivateNextItem",
-      "ctrl-shift-tab": "pane::ActivatePrevItem"
+      "ctrl-shift-tab": "pane::ActivatePreviousItem"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-i": null
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-shift-i": null
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-'": "edit_prediction::ToggleMenu"
+    }
+  },
+  {
+    "context": "(FileFinder || FileFinder > Picker > Editor)",
+    "bindings": {
+      "ctrl-shift-i": null
+    }
+  },
+  {
+    "context": "!ContextEditor > (Editor && mode == full)",
+    "bindings": {
+      "ctrl-shift-i": "assistant::InlineAssist"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-alt-right": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-alt-left": null
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-right": "pane::SplitAndMoveRight"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-left": "pane::SplitAndMoveLeft"
     }
   }
 ]
