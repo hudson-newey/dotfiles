@@ -17,7 +17,7 @@
   "ui_font_family": "JetBrains Mono",
   "toolbar": {
     "quick_actions": false,
-    "breadcrumbs": false
+    "breadcrumbs":  true
   },
   "file_finder": {
     "modal_max_width": "medium"
