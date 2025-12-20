@@ -1,0 +1,36 @@
+font-family = "JetBrains Mono"
+command = "zsh"
+font-size = 10
+
+window-width = 120
+window-height = 32
+
+window-padding-x = 12
+window-padding-y = 8
+
+keybind = ctrl+shift+a=ignore
+keybind = ctrl+shift+b=ignore
+keybind = ctrl+shift+c=ignore
+keybind = ctrl+shift+d=ignore
+keybind = ctrl+shift+e=ignore
+keybind = ctrl+shift+f=ignore
+keybind = ctrl+shift+g=ignore
+keybind = ctrl+shift+h=ignore
+keybind = ctrl+shift+i=ignore
+keybind = ctrl+shift+j=ignore
+keybind = ctrl+shift+k=ignore
+keybind = ctrl+shift+l=ignore
+keybind = ctrl+shift+m=ignore
+keybind = ctrl+shift+n=ignore
+keybind = ctrl+shift+o=ignore
+keybind = ctrl+shift+p=ignore
+keybind = ctrl+shift+q=ignore
+keybind = ctrl+shift+r=ignore
+keybind = ctrl+shift+s=ignore
+keybind = ctrl+shift+t=ignore
+keybind = ctrl+shift+u=ignore
+keybind = ctrl+shift+v=ignore
+keybind = ctrl+shift+w=ignore
+keybind = ctrl+shift+x=ignore
+keybind = ctrl+shift+y=ignore
+keybind = ctrl+shift+z=ignore
