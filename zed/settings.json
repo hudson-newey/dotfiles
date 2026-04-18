@@ -7,12 +7,27 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "tabs": {
+    "file_icons": true
+  },
+  "edit_predictions": {
+    "sweep": {
+      "privacy_mode": true
+    }
+  },
+  "disable_ai": false,
+  "show_edit_predictions": true,
+  "ui_font_weight": 400.0,
+  "agent_buffer_font_size": 12.0,
+  "agent_ui_font_size": 12.0,
+  "buffer_line_height": "standard",
+  "buffer_font_weight": 400.0,
   "ensure_final_newline_on_save": true,
   "format_on_save": "off",
   "icon_theme": "Material Icon Theme",
   "vim_mode": true,
-  "ui_font_size": 14,
-  "buffer_font_size": 12,
+  "ui_font_size": 14.0,
+  "buffer_font_size": 14.0,
   "buffer_font_family": "JetBrains Mono",
   "ui_font_family": "JetBrains Mono",
   "toolbar": {
@@ -20,7 +35,7 @@
     "breadcrumbs":  true
   },
   "file_finder": {
-    "modal_max_width": "medium"
+    "modal_max_width": "small"
   },
   "buffer_font_features": {
     "calt": false
@@ -37,7 +52,22 @@
     }
   },
   "lsp": {
-		"angular": {
+		"vtsls": {
+   "settings": {
+    "typescript": {
+     "updateImportsOnFileMove": {
+      "enabled": "always"
+     }
+    },
+    "javascript": {
+     "updateImportsOnFileMove": {
+      "enabled": "always"
+     }
+    }
+   },
+   "enable_lsp_tasks": true
+  },
+  "angular": {
 			"initialization_options": {
 				"angular_language_service_version": "latest",
 				"typescript_version": "latest"
@@ -64,13 +94,19 @@
     "entry_spacing": "standard"
   },
   "agent": {
-    "default_model": {
+    "tool_permissions": {
+      "default": "allow"
+    },
+    "inline_assistant_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini"
     },
+    "default_profile": "write",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gemini-3-flash-preview"
+    },
     "model_parameters": []
-  },
-  "features": {
-    "edit_prediction_provider": "copilot"
   }
 }
+
