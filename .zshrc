@@ -32,7 +32,7 @@ alias cd='z'
 alias gc='git commit'
 alias gp='git push'
 alias gm='git pull'
-alias dev-browser='brave-browser-nightly --enable-gpu-service-tracing --show-overdraw-feedback --incognito --disable-extensions --disable-features=Translate --js-flags="--trace-opt --trace-deopt" --js-flags="--allow-natives-syntax"'
+alias dev-browser='brave-browser-nightly --enable-gpu-service-tracing --show-overdraw-feedback --incognito --disable-extensions --disable-features=Translate --js-flags="--trace-opt --trace-deopt --allow-natives-syntax"'
 export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/.dotnet/tools
 export PATH=$PATH:~/.cargo/bin
